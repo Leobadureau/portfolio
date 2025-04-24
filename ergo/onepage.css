@@ -1,0 +1,465 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Body Styles */
+body {
+    font-family: DejaVu Sans Mono, monospace;
+    background-color: #1F1F1F; 
+    margin: 0;
+    padding-top: 60px;
+    min-height: 100vh; /* Remplacer height par min-height pour permettre un contenu dynamique */
+}
+
+/* Header Styles */
+.logo {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px;
+    font-size: 20px;
+    color: whitesmoke;
+}
+
+header {
+    font-style: italic;
+    color: #ccc;
+}
+
+/* Navigation Styles */
+nav {
+    margin-right: 100px;
+    display: flex; 
+    gap: 40px;
+}
+
+.lien {
+    padding-top: 20px;
+    padding-bottom: 20px;
+    font-size: 25px;
+    color: #fff;
+    cursor: pointer;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+.lien:hover {
+    color: #8138f8; 
+}
+
+a:focus {
+    outline: 2px solid #fff;
+}
+
+/* Active Link Styles */
+.lien-actuel {
+    font-size: 25px;
+    color: rgb(138, 137, 137);
+    cursor: pointer;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+/* Main Section - Acceuil */
+.principal {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    min-height: 100vh; /* Remplacer height par min-height */
+    padding: 20px;
+    gap: 100px; 
+}
+
+.text1 {
+    color: #D7D7D9;
+    max-width: 50%;
+    text-align: justify;
+    margin-left: 100px;
+}
+
+.text1 h2 {
+    font-family: DejaVu Sans Mono, monospace;
+    color: #9F66F9;
+    font-size: 2rem; 
+    margin-bottom: 20px;
+}
+
+.text1 p {
+    font-size: 1.2rem; 
+    line-height: 1.6; 
+    margin-bottom: 30px;
+}
+
+.bouton {
+    display: inline-block;
+    padding: 10px 20px;
+    background-color: #7A2BF7;
+    color: #022945;
+    text-decoration: none;
+    font-weight: bold;
+    border-radius: 5px;
+}
+
+.bouton:hover {
+    background-color: #af87f0;
+}
+
+.photo {
+    flex: 1; 
+    text-align: center;
+}
+
+.photo img {
+    max-width: 40%;
+    border-radius: 10px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+}
+
+/* Portfolio Section */
+.portfolio-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh; /* Remplacer height par min-height */
+}
+
+/* Portfolio Grid */
+.grid-container {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr); 
+    grid-template-rows: auto;
+    gap: 50px; 
+    padding: 20px;
+    justify-items: center; 
+    width: 80%;
+    margin: 0 auto; 
+}
+
+/* Styles supplémentaires pour les boîtes de portfolio */
+.box {
+    background-color: #595959;
+    color: #D7D7D9;
+    padding: 20px;
+    text-align: center;
+    border-radius: 8px;
+    font-weight: bold;
+    width: 100%;
+    box-sizing: border-box;
+    transition: transform 0.3s ease, background-color 0.3s ease;
+    max-width: 250px;
+}
+
+.box-image {
+    width: 100%;
+
+    display: block;
+    margin-bottom: 20px;
+}
+
+.box:hover {
+    background-color: #fffbf8;
+    transform: scale(1.05);
+}
+
+.box-button {
+    display: inline-block;
+    padding: 10px 20px;
+    background-color: #7A2BF7;
+    color: #fff;
+    text-decoration: none;
+    font-weight: bold;
+    border-radius: 10px;
+}
+
+.box-button:hover {
+    background-color: #af87f0;
+}
+
+/* About Me Section */
+.principal2 {
+    display: flex;
+    flex-direction: row; 
+    align-items: center; 
+    justify-content: space-between; 
+    min-height: 100vh; /* Remplacer height par min-height */
+    padding: 30px;
+    margin-top: 20px;
+    gap: 50px; 
+    box-sizing: border-box;
+}
+
+.principal2 .text1 {
+    margin-top: 40px;
+    max-width: 50%;
+    text-align: justify;
+    margin-left: 50px; 
+}
+
+.principal2 .photo {
+    flex: 1;
+    display: flex;
+    justify-content: center; 
+    align-items: center; 
+}
+
+.principal2 .photo img {
+    max-width: 80%;
+    height: auto;
+    border-radius: 10px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+}
+
+.text1 h2 {
+    color: #9F66F9;
+    font-size: 2rem; 
+    margin-bottom: 20px;
+}
+
+.text1 p {
+    font-size: 1.2rem; 
+    line-height: 1.6; 
+    margin-bottom: 30px;
+}
+
+.bouton {
+    display: inline-block;
+    padding: 10px 20px;
+    background-color: #7A2BF7;
+    color: #fff;
+    text-decoration: none;
+    font-weight: bold;
+    border-radius: 5px;
+}
+
+.bouton:hover {
+    background-color:#af87f0;
+}
+
+.photo {
+    flex: 1; 
+    text-align: center;
+}
+
+.photo img {
+    max-width: 40%;
+    border-radius: 10px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+}
+
+/* Section Skills */
+#skills {
+    max-width: 800px;
+    margin: 0 auto;
+    text-align: center;
+    padding: 40px 20px;
+    border-radius: 10px;
+}
+
+#skills h2 {
+    font-size: 2rem;
+    margin-bottom: 20px;
+    color: #9F66F9;
+}
+
+.skill {
+    margin-bottom: 20px;
+}
+
+.skill span {
+    font-size: 1.2rem;
+    display: block;
+    margin-bottom: 5px;
+    color: #fff;
+    text-align: left;
+}
+
+.skill-bar {
+    background-color: #e0e0e0;
+    border-radius: 25px;
+    overflow: hidden;
+    height: 20px;
+    position: relative;
+    width: 100%;
+}
+
+.progress {
+    height: 100%;
+    background: linear-gradient(to right, #ccb5f1, #8138f8);
+    border-radius: 25px;
+    width: 0; 
+    transition: width 0.5s ease-in-out;
+}
+
+.skill-bar:hover .progress {
+    background: linear-gradient(to left, #000000, #b3b3b3);
+}
+
+/* Contact Section */
+.principal3 {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center; 
+    min-height: 100vh; /* Remplacer height par min-height */
+    padding: 20px;
+    gap: 30px; 
+    box-sizing: border-box;
+}
+
+.container {
+    width: 80%;
+    max-width: 800px;
+    margin: 0 auto;
+    text-align: center;
+}
+
+h1 {
+    font-size: 2.5rem;
+    color: #fff;
+    margin-bottom: 30px;
+    font-family: 'Roboto', sans-serif;
+}
+
+h2 {
+    color: #9F66F9;
+}
+
+form {
+    padding: 30px;
+    text-align: left;
+}
+
+/* Labels */
+label {
+    display: block;
+    font-size: 1rem;
+    color: #fff;
+    margin-bottom: 8px;
+    font-family: 'Roboto', sans-serif;
+}
+
+/* Champs de texte */
+input[type="text"],
+input[type="email"],
+textarea {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 20px;
+    border: 2px solid #ccc;
+    border-radius: 4px;
+    font-size: 1rem;
+    font-family: 'Arial', sans-serif;
+}
+
+input[type="text"]:focus,
+input[type="email"]:focus,
+textarea:focus {
+    border-color: #9F66F9;
+    outline: none;
+}
+
+/* Bouton d'envoi */
+button {
+    background-color: #7A2BF7;
+    color: #fff;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    font-size: 1.1rem;
+    font-family: 'Arial', sans-serif;
+    transition: background-color 0.3s ease;
+}
+
+button:hover {
+    background-color: #ccb5f1;
+}
+
+/* Footer */
+footer {
+    display: flex;
+    justify-content: space-between; 
+    align-items: center; 
+    padding: 20px;
+    background-color: #7A2BF7; 
+    width: 100%;
+    position: relative; /* Changer position: static à relative */
+}
+
+.footer {
+    color: #fff;
+    text-align: center;
+    font-size: 14px;
+}
+
+/* Media Queries */
+/* Pour les écrans plus petits (moins de 768px) */
+@media (max-width: 768px) {
+    .principal, .principal2, .principal3 {
+        flex-direction: column; /* Passage en colonne pour mieux s'adapter */
+        align-items: center;
+    }
+
+    .text1 {
+        margin-left: 0;
+        max-width: 100%; /* Adapter la largeur au parent */
+        text-align: center;
+    }
+
+    .photo img {
+        max-width: 80%; /* Adapter la taille de l'image */
+    }
+
+    .grid-container {
+        grid-template-columns: 1fr; /* Une seule colonne pour les petits écrans */
+        gap: 20px;
+    }
+
+    /* Ajustement des boutons pour les petits écrans */
+    .bouton, .box-button {
+        width: 100%;
+        padding: 12px 20px;
+        font-size: 1rem;
+    }
+
+    /* Ajustement de la taille de la police */
+    h1, h2 {
+        font-size: 1.8rem;
+    }
+
+    .lien, .lien-actuel {
+        font-size: 20px;
+    }
+
+
+    
+}
+
+/* Pour les très petits écrans (moins de 480px) */
+@media (max-width: 480px) {
+    .logo h1 {
+        font-size: 18px;
+    }
+
+    .principal, .principal2, .principal3 {
+        padding: 10px;
+    }
+
+    .text1 p, .text1 h2, .box {
+        font-size: 1rem;
+    }
+
+    .photo img {
+        max-width: 90%;
+    }
+
+    .box {
+        max-width: 200px; /* Limiter la taille des boîtes dans le portfolio */
+    }
+
+    .grid-container {
+        grid-template-columns: 1fr; /* Une seule colonne */
+    }
+}

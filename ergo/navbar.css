@@ -1,0 +1,95 @@
+
+
+/* Header */
+header {
+    z-index: 100;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100vw;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 20px;
+    background-color: #1d1d1d;
+    border-bottom: 2px solid #8138f8;
+}
+
+/* Logo */
+.logo{
+    font-size: 15px;
+    color: whitesmoke;
+}
+
+header{
+    font-style: italic;
+    color: #ccc;
+}
+
+/* Navigation */
+nav {
+    display: flex;
+    gap: 40px;
+    margin-right: 100px;
+}
+
+.lien {
+    padding-top: 20px;
+    padding-bottom: 20px;
+    font-size: 25px;
+    color: #fff;
+    cursor: pointer;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+.lien:hover {
+    color: #8138f8;
+}
+
+.lien-actuel {
+    font-size: 25px;
+    color: rgb(138, 137, 137);
+    cursor: pointer;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+/* Menu burger */
+.menu-burger {
+    display: none;
+    font-size: 30px;
+    cursor: pointer;
+    color: white;
+    padding: 10px;
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+    nav {
+        display: none;
+        position: absolute;
+        top: 60px;
+        left: 0;
+        width: 100%;
+        background-color: #1d1d1d;
+        flex-direction: column;
+        align-items: center;
+        padding: 20px 0;
+        border-bottom: 2px solid #8138f8;
+    }
+
+    .menu-burger {
+        display: block;
+    }
+
+    nav.active {
+        display: flex;
+    }
+
+    nav a {
+        padding: 15px;
+        font-size: 20px;
+        display: block;
+    }
+}

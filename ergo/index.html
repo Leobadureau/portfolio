@@ -1,0 +1,158 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="onepage.css">
+    <link rel="stylesheet" href="navbar.css">
+  
+</head>
+
+<body>
+
+    <header>
+        <div class="logo">Badureau Léo /Portfolio</div>
+        <nav aria-label="navigation principal">
+            <a href=#acceuil class="lien" tabindex="0">Acceuil</a>
+            <a href=#portfolio class="lien" tabindex="1">Portfolio</a>
+            <a href=#aboutme class="lien" tabindex="2">About Me</a>
+            <a href=#contact class="lien" tabindex="3">Contact</a>
+        </nav>
+    </header>
+        <main>
+            <section id="acceuil" class="principal">
+              <div class="text1">
+                <h2>Bienvenue</h2>
+                <p>
+                    Bonjour, je m'appelle Léo Badureau. Actuellement étudiant en première année de BUT Métiers du Multimédia et de l’Internet (MMI), je suis curieux et motivé. Je travaille sur des projets variés, tels que la création de contenu, la stratégie numérique, le design, le développement web et la gestion de projets.
+
+                    N'hésitez pas à explorer mon portfolio pour découvrir mes projets et réalisations !
+                </p>
+                <a href=#portfolio tabindex="4" class="bouton">My portfolio</a>
+              </div>
+              <div class="photo">
+                <img src=images/PHOTO1.jpeg alt="Photo de profil">
+              </div>
+            </section>
+
+
+        <div id="portfolio" class="portfolio-container">
+            <div id="portfolio2" class="grid-container">
+                <div class="box">
+                    <img src="images/prog.jpg" alt="Programation" class="box-image" >
+                    <button class="box-button">Programation</button>
+                </div>
+                <div class="box">
+                    <img src="images/cinéma.jpg" alt="Cinéma" class="box-image">
+                    <button class="box-button">Cinéma</button>
+                </div>
+                <div class="box"><img src="images/naration.jpg" alt="Narration" class="box-image">
+                    <button class="box-button">Narration</button>
+                </div>
+                <div class="box">
+                    <img src="images/langue.jpg" alt="Langues" class="box-image">
+                    <button class="box-button">Langues</button>
+                </div>
+                <div class="box">
+                    <img src="images/gestion.png" alt="Gestion de projet" class="box-image">
+                    <button class="box-button">Gestion de projet</button>
+                </div>
+                <div class="box">
+                    <img src="images/Photoshop.png" alt="Production graphique" class="box-image">
+                    <button class="box-button">Production graphique</button>
+                </div>
+                <div class="box">
+                    <img src="images/com.jpg" alt="Communication" class="box-image">
+                    <button class="box-button">Communication</button>
+                </div>
+                <div class="box">
+                    <img src="images/autre.avif" alt="Autres" class="box-image">
+                    <button class="box-button">Autres</button>
+                </div>
+            </div>
+        </div>
+            
+            <section id="aboutme" class="principal2">
+                <div class="text1">
+                  <h2>A propos de moi</h2>
+                  <p>À travers mes études en BUT Métiers du Multimédia et de l’Internet, j’explore et développe des compétences variées telles que le design web, le développement, la création de contenu et la stratégie numérique. Bien que j’aie déjà acquis de solides bases, je suis conscient qu’il me reste encore beaucoup à apprendre. Toujours curieux et motivé, je m’efforce chaque jour de progresser et de relever de nouveaux défis dans le domaine du digital.
+
+                  </p>
+                  <section id="skills">
+                    <h2>Mes Compétences</h2>
+                    <div class="skill">
+                        <span>Web Design</span>
+                        <div class="skill-bar">
+                            <div class="progress" style="width: 50%;"></div>
+                        </div>
+                    </div>
+                    <div class="skill">
+                        <span>Développement Web</span>
+                        <div class="skill-bar">
+                            <div class="progress" style="width: 50%;"></div>
+                        </div>
+                    </div>
+                    <div class="skill">
+                        <span>Création de contenu</span>
+                        <div class="skill-bar">
+                            <div class="progress" style="width: 60%;"></div>
+                        </div>
+                    </div>
+                    <div class="skill">
+                        <span>Gestion de projets</span>
+                        <div class="skill-bar">
+                            <div class="progress" style="width: 60%;"></div>
+                        </div>
+                    </div>
+                    <div class="skill">
+                        <span>Stratégie numérique</span>
+                        <div class="skill-bar">
+                            <div class="progress" style="width: 40%;"></div>
+                        </div>
+                    </div>
+                </section>
+                
+                </div>
+                <div class="photo">
+                  <img src=images/PHOTO2.jpeg  alt="Profile picture">
+                </div>
+              </section> 
+
+              <section id="contact" class="principal3">
+                <div class="container">
+                    <h2>Contactez moi</h2>
+                    <form action="send_email.php" method="POST">
+                        <label for="nom">Nom :</label>
+                        <input type="text" id="nom" name="nom" required>
+            
+                        <label for="prenom">Prénom :</label>
+                        <input type="text" id="prenom" name="prenom" required>
+            
+                        <label for="email">Adresse E-mail :</label>
+                        <input type="email" id="email" name="email" required>
+            
+                        <label for="message">Message :</label>
+                        <textarea id="message" name="message" rows="5" required></textarea>
+            
+                        <button type="submit">Envoyer</button>
+                    </form>
+                </div>
+            
+                <!-- Affichage du message de confirmation -->
+                <div class="message">
+                    <!-- Message de confirmation peut être ajouté ici après l'envoi du formulaire -->
+                </div>
+                
+            </section>
+            
+
+
+          </main>
+          <footer id="footer-contact">
+            <div class="footer">© 2025 Badureau Léo. Tous droits réservés.</div>
+        </footer>
+
+</body>
+</html>
